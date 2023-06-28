@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add custom CSS file -->
+    
+    <!--<link rel="stylesheet" type="text/css" href="css/Marlonstyle.css">-->
+    
+    <script>
+        function readMore() {
+          var dots = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+        
+          if(dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read less"; 
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read more"; 
+          }
+        }
+        </script>
+
+       <style>
+
+.hidden {
+    display: none;
+}
+       </style> 
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WOW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Interviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bericht.html">Berichte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog posts -->
+            <div class="col-md-8">
+                <h2>Latest Posts</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Paulfreyman Interview</h5>
+                        <!--<p id="myContent">This is the start of the content. 
+<span id="more"> This is the rest of the content that was hidden.</span></p>
+<button onclick="readMore()" id="myBtn">Read more</button>-->
+
+
+                        <p class="card-text" id="myContent">
+                            Interviewer (<Strong>Marlon</Strong>): Was wollten Sie, als Sie noch ein Kind waren, was waren so Ihre Träume, was Sie mal werden wollten?
+                                <br/>
+                                <br/>
+                    Interviewed person (<Strong>Palfreyman</Strong>): Ich wollte fliegen und zwar nicht als Pilot, sondern als Vogel. Ich wollte lernen zu fliegen. Als zwölfjähriger habe ich Turnspringen gemacht und es kam irgendwie hin, aber ich konnte nicht oben bleiben und deswegen wollte ich unbedingt irgendwann lernen zu fliegen.
+                    <span id="more" class="hidden">
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Gab es eine Zeit, als Sie dann realisiert haben, oder gab es den Traum schon bevor Sie wussten, dass Menschen nicht fliegen konnten?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich habe damals geglaubt, dass es möglich wäre. Vielleicht gibt es irgendeine Technologie, die das ermöglicht und bis ich irgendwann die biologischen Fakten des Verhältnisses zwischen Masse und Oberfläche verstanden hatte, hatte ich schon eine andere Möglichkeit gefunden zu fliegen und das war die Mathematik. Das würde dann auch in die nächste Frage vielleicht überleiten, wissen wir noch nicht.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Welche Schulfächer, welche Themen vielleicht auch haben Ihnen in der Schule Spaß gemacht oder Sie interessiert besonders?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich glaube, Mathe hat mich zunächst nicht besonders interessiert. Ich glaube Schule hat mich nicht so sonderlich interessiert, aber ich weiß noch, ich habe die mittlere Reife früher gemacht als andere und dann hatte ich ein bisschen Freizeit und ich habe ein Buch zum Abitur durchgelesen und da ging es um die Differenzialrechnung und ich fand es einfach magisch, wie man diese Reise machen kann bis ins Unendliche und dann zurückkommen und da hast du echte Antworten in der wirklichen Welt. Also die Differenzialrechnung ist für mich ein super Beispiel für die Möglichkeit der Mathematik völlig abzuheben von der Erde, trotzdem die innere Logik zu behalten und dann zu einer Antwort zu kommen, die in der reellen Welt nützlich ist.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und mit Abitur meinen Sie jetzt die A-Levels?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ja, genau. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay, willst du weiter machen? 
+                                <br/>
+                                <br/>
+                    Noah: Ich komme jetzt zur nächsten Frage. Wo waren Sie beruflich tätig und was haben diese Firmen gemacht? Oder Institutionen?
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay, also direkt nach meinem Bachelorabschluss habe ich die Lehrerausbildung gemacht, dann habe ich auch sechs Monate lang als Lehrer gearbeitet und ich bin auch... Nein, dann habe ich auch als Lehrer gearbeitet. Dann habe ich meinen Master gemacht in Aberdeen von 1980 bis 1981. Von 1981 bis 1982 habe ich ein bisschen als Lehrer gearbeitet und dann später habe ich abgespült in der Mensa an der Uni Regensburg.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay, also sind Sie dann in 1982 sozusagen nach Deutschland gekommen?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Zwischen 1981 und 1982 bin ich nach Deutschland gekommen, weil ich meiner zukünftigen Frau begegnet war. Ah, okay. Und deswegen bin ich nach Deutschland gekommen. Und dann habe ich gedacht, nein, abspülen in der Mensa ist nichts für das Leben. Ich gehe zurück nach Großbritannien und mache meinen Doktor. Von 1982 bis 
+                                <br/>
+                                <br/>
+                    1984 habe ich dann promoviert. Dann von 1984 bis 1986 habe ich bei IBM gearbeitet. Dann von 1986 bis fast 1990 habe ich an der Open University in England gearbeitet im Bereich Biomagnetismus und Expertensysteme. Dann bin ich nach Deutschland gekommen, habe das erste Jahr am Organisch-Chemischen Institut an der TU gearbeitet, Computermodellierung von chemischen Reaktionen. Dann habe ich drei, vier Jahre lang in der Ausbildung von Programmierern gearbeitet bei der Firma AT&T. Dann von 1995 bis 2000 war ich bei einer Firma, die Software für die Bekleidungsindustrie gemacht hat. Und da ging es um die Lösung des sogenannten Nesting-Problems. Das ist das Problem, wo man versucht, Jeans-Teile, mein Kunde war Levi Strauss, Jeans-Teile so eng zusammenzupacken wie möglich auf der Stoffbahn, dass man möglichst wenig Verschnitt hat. Dann bin ich in 2000 zur Hochschule gekommen, Hochschule Feinstephan-Triesdorf, und hier bin ich seitdem.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und seit wann gibt es schon den Bioprozess Informatikstudium?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Seitdem ich hier bin. In 2000 war das Human Genome Projekt, Anfang von Bioprozess Informatik bei uns und Anfang von Herrn Hege und von mir. Und auch von Herrn Eisele haben wir heute gefragt. Bitte? Und auch von Herrn Eisele. Der hat auch hier dann mitgeholfen, habe ich gehört. Er... Bei den Datenbankenfach. Ja, genau. Der macht Datenbanken-Sektoren.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay. Und wurden Sie gefragt, dass Sie diesen Studiengang mit aufbauen wollen? Oder wollten Sie schon mal den Studiengang aufbauen? Oder wie ist das verlaufen, dass der Studiengang zustande gekommen ist?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Also der Studiengang war schon konzipiert von der Fakultät Biotechnologie, wie sie damals hieß. Und der prinzipielle Erfinder, der Schöpfer des Studiengangs war Hermann Heiler. Der war Professor in Biotechnologie. Später war er dann Präsident der Hochschule. Aber er war zielführend für den Aufbau dieses Studiengangs. Und das passierte bevor wir überhaupt Studierende hatten. Los ging es dann im Oktober 2000 und da haben ich und Herr Hege und der Studiengang gleichzeitig angefangen.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und Sie haben dann auch direkt in dem Studiengang wahrscheinlich unterrichtet?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ja, ja. Ich habe von Anfang an nur in dem Studiengang unterrichtet.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Dann vielleicht, wieso sind Sie... Erstmal, was hat Sie dazu veranlasst oder wieso wollten Sie gerne Leuten was unterrichten? Und dann jetzt sozusagen, wieso wollten Sie dann an der HSWT unterrichten? Also vielleicht, Sie meinten ja am Anfang, dass Sie direkt nach Ihrem Bachelor schon mal angefangen haben zu unterrichten.Genau. Wieso ist das zustande gekommen? Warum wollten Sie gerne Leute unterrichten und dann eben jetzt an der HSWT?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich habe eine Theorie und diese Theorie habe ich mein ganzes Leben lang und zwar, dass Lernen und Leben irgendwie miteinander zusammenhängen. Es gibt keine Organismen, die nicht lernen. Wenn man nicht lernt, dann lebt man nicht. Lernen ist... Nein, vielleicht besser, Leben ist nicht nur existieren, sondern immer effektiver mit dem Leben umzugehen. Und das ist Lernen. Also vom Anfang an habe ich mich für Lebensprozesse und für Lernprozesse interessiert. Ich glaube, es war mir nicht bewusst, wie ich in 1979 die Lehrerausbildung gemacht habe, aber ich wusste, dass es irgendwie zusammenhängt mit meinem Interesse an Mathematik. Und jetzt im Nachhinein weiß ich, dass das die Verbindung war.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und wieso wollten Sie dann in dem Bioprozessinformatikstudiengang arbeiten oder lehren?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich habe schon gesagt, wieso ich lehren wollte und jetzt wollen Sie wissen, wieso speziell in diesem Studiengang. Ja, eben, weil Lernen für mich zusammenhängt mit Leben. Ich wollte Leben besser verstehen. Was ist Leben und wie lernt ein Lebewesen? Und dieser Studiengang schien mir damals in die Richtung zu geben. Seitdem habe ich festgestellt, dass es nicht ganz so ist, aber trotzdem... Und das beantwortet vielleicht eine andere Frage von Ihnen, wieso hier an der HSVT. Hier hatte ich die Freiheit, mich zu entwickeln in die Richtung, die mich interessiert. Die nicht immer die Richtung war, die Kolleginnen und Kollegen wollten. Aber trotzdem hatte ich hier diese Freiheit. Deswegen bin ich gern hier.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Cool, das ist schön. Sie haben uns ja auch im Unterricht schon öfter mal von Büchern erzählt, die Sie gelesen haben. Und welches Buch, würden Sie sagen, hat Ihr Denken maßgeblich beeinflusst? Gerne aus Ihrer Gesamtlebenszeit, wenn Sie sich noch erinnern, aber auch gerne aus der letzten Zeit.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Aus der letzten Zeit? Also ich denke, zwei Bücher fallen mir ein. Das eine ist ein Roman und das heißt City von Clifford Simak. Und das andere Buch ist ein Sachbuch. Und das heißt Gödel Escher-Bach, An Eternal Golden Braid von Douglas R. Hofstadter. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und die haben Sie in letzter Zeit gelesen, meinen Sie?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Also Gödel Escher-Bach, das habe ich 1980 oder so gelesen. Aber ich komme immer wieder zurück zu den Ideen. City habe ich auch in der Zeit gelesen, aber ich habe es noch mal gelesen vor kurzem, weil ich das Buch gern an Hundebesitzer schenke.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und was geht es denn in City ungefähr, ohne zu viel vorauszunehmen?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Die Zukunft der Erde und die Zukunft der Menschheit aus der Sicht von Hunden.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ah, okay. Also Sie haben ja gemeint, was Sie fasziniert hat, sind die, als erstes, wo Sie Mathematik für sich entdeckt haben, waren die Differentialrechnungen. Gibt es irgendein anderes Gebiet, was Sie auch sehr fasziniert hat
+                                <br/>
+                                <br/>
+                    , ein Beispiel außer den Differentialrechnungen? Ein Wissensbereich überhaupt? Genau, einfach ein Wissensbereich, der vielleicht auch komplex ist, wo man sich als erstes denkt, dass er schwierig zu verstehen sein könnte. Aber dann haben Sie entdeckt, dass er total interessant und total erstaunlich und faszinierend ist.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ja, Inaktivismus. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Können Sie den vielleicht so anschneiden, sag ich mal, worum es da geht, dass ein Laie es verstehen könnte?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Es gibt diesen alten Spruch, was kam als erstes, die Huhn oder das Ei. Und Inaktivismus geht es darum, wie können beide gleichzeitig in Abhängigkeit voneinander entstehen. Und die berühmte Metapher ist der Spruch, wie heißt es auf Deutsch? Wanderer, dein... Nein, ich kann es weder in Englisch noch in Deutsch sagen, deswegen muss ich einfach, glaube ich, die Idee rüberbringen. Sie laufen durch einen Wald, da gibt es noch kein Pfad. Also laufen Sie dort, wo die Vegetation am einfachsten ist durchzudringen. Das nächste Mal, wo jemand vorbeikommt, machen Sie dasselbe und merken, dass es besonders einfach ist dort, wo Sie sich durchgedrungen haben. Und das passiert immer wieder, bis man einen Pfad, und der Pfad ist zum einen der Grund, wieso die Menschen den Weg nehmen, als auch das Ergebnis dessen, dass sie den Weg gehen. Sprich, der Pfad und das Verhalten der Menschen sind gegenseitig abhängig voneinander. Das eine ohne das andere kann es nicht geben. Und das, sagt der Inaktivismus, ist eine Metapher für Leben.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Sehr interessant. Was zum Beispiel in Physik letztes Semester, hatten wir gelernt, dass es noch nicht klar ist, wie Neutronen, Sternen, ich bin mir nicht mehr ganz sicher, was es war, aber es war auf jeden Fall ein Phänomen in der Physik um die Sonne rum, das noch nicht geklärt war. Und jetzt wollten wir Sie fragen, gerne auch in der Mathematik, was sind einige ungelöste Probleme, oder erstmal, ist es möglich zu beweisen, dass man ein ungelöstes Problem nicht lösen kann?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Es ist manchmal möglich. Bei manchen Problemen ist es möglich zu beweisen, dass man das Problem nicht lösen kann. Aber definitiv nicht bei allen. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Und bei einem, wo man nicht beweisen kann, dass es unmöglich ist zu lösen, was gibt es da in der Mathematik und welches von Ihnen denken Sie wäre wichtig zu lösen?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Oh, wichtig zu lösen, keine Ahnung. Ich weiß nicht, was wichtig ist und was nicht. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Was gefällt Ihnen denn von diesen Problemen und hoffen, dass es gelöst wird vielleicht?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich hoffe nicht, dass es gelöst wird. Ich finde, spannend sind Probleme, die nicht lösbar sind.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ah, okay. Und was ist denn ein Problem in der Mathematik, das noch nicht gelöst ist? 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>n: Wollen Sie ein Problem, das lösbar ist, aber noch nicht gelöst ist, oder wollen
+                                <br/>
+                                <br/>
+                     Sie ein Problem, das wahrscheinlich nicht lösbar ist?
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ein Problem, das lösbar ist, aber noch nicht gelöst ist. Oder auch ein Problem, wo man sich noch nicht sicher ist, ob es lösbar ist, aber man sich ganz sicher nicht sicher ist, dass es nicht lösbar ist. Also, dass es lösbar ist. Wie soll ich das sagen? (an Noah): Weißt du, was ich meine?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Niemand weiß, was Sie meinen.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ja, Entschuldigung. Man ist sich nicht sicher, ob das Problem lösbar ist, aber man kann auch nicht sicher sagen, dass es nicht lösbar ist.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Aha, okay. Die Goldbachsche Vermutung. Und zwar denken Sie an irgendeine gerade Zahl zwischen 2 und 10. Okay? Ist es möglich, zwei Zahlen zu finden, deren Summe gleich Ihre Zahl ist und die beide Primzahlen sind? 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Zwei unterschiedliche Zahlen, oder?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Die müssen nicht unterschiedlich sein. Nehmen wir zum Beispiel 8.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ja.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Können Sie an zwei Zahlen, Primenzahlen, denken, deren Summe gleich 8 ist?
+                                <br/>
+                                <br/>
+                    Noah: 2 und 5? Ah, 3 und 5. 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: 3 und 5, okay. Also, 8 ist eine gerade Zahl und ist zerlegbar als Summe von zwei Zahlen, die beide Primzahlen sind. Ist das möglich mit den Zahlen, die Sie im Kopf hatten?
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ja.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Nur?
+                                <br/>
+                                <br/>
+                    Noah: Ich habe die 8 genommen. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>:Ich habe die 6 genommen. 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Und jetzt denken Sie an eine Zahl unter 20. Ist es da machbar?
+                                <br/>
+                                <br/>
+                    Noah: Ja.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Okay. Die Goldbachsche Vermutung ist, dass jede gerade Zahl als die Summe von zwei Primenzahlen ausgedrückt werden kann. Es ist getestet worden bis in zig, zehn, zehn hoch, Gott weiß was. Aber niemand hat es bewiesen. Und die Vermutung ist, dass es auch nicht beweisbar ist.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ah, okay. Aber man kann sich nicht sicher sein, dass es nicht beweisbar ist.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Genau. Was aber Gregory Chaitin in den 70er Jahren bewiesen hat, ist, dass die Anzahl von unbeweisbaren Wahrheiten unendlich viel größer ist als die Anzahl der beweisbaren Wahrheiten. Manche Wahrheiten sind beweisbar, manche sind prinzipiell nicht beweisbar. Und die Anzahl derjenigen, die nicht beweisbar sind, ist unendlich mal größer als die Anzahl derer, die beweisbar sind. Was zunächst als massiven Rückschlag für die Mathematik klingt, aber auf der anderen Seite als massive Befreiung vom Determinismus ist.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Vom deterministischen Weltbild. 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: ja.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Jetzt mal zu etwas anderem noch, was nicht direkt mit Fachrichtungen zu tun hat. Was ist jetzt, wenn Sie jetzt mit Ihrem jetzigen Wissen jung wären und das jetzige Wissen hätten, was unrealistisch ist natürlich, und ein Studium wählen dürften, welches würden Sie wählen? Und auch, welches würden Sie wählen, wenn Sie jetzt mit dem bisherigen Lebensweg auch ein neues Studium anfangen würden? 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: In meinem Alter jetzt?
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ja. 
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ich glaube, in beiden Fällen würde ich wahrscheinlich zur Universität Sussex gehen in Südengland und beim Ezequiel Dipaolo studieren. Und zwar Inaktivismus(enactivism).
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Ah, okay. Interessant. Und warum?  Weil Sie Inaktivismus so interessant finden und das einer der wenigen ist, wo es das gibt?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Zum einen, weil Inaktivismus mich wahnsinnig interessiert und zum anderen, weil ich die Arbeit von ihm sehr bewundere und ich hätte gern die Gelegenheit, mit ihm einfach täglich über Kaffee zu diskutieren.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay. Es sind noch vier Fragen. Wie stehen Sie zur heutigen Situation der Mathematik- und Physikbildung, gerne in Deutschland oder auch in England? Gibt es spezifische Änderungen oder Innovationen, die Ihrer Meinung nach umgesetzt werden sollten, um die Bildung zu verbessern?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Puh, das ist schwierig. Ich glaube, es ist wichtig für Bildung allgemein, dass wir weniger Fakten betonen und mehr die Geschichten, die wir aus diesen Fakten bilden. Zum Beispiel. Was ist wichtiger? Die Theorie von Differentialgleichungen theoretisch zu verstehen und keine Ahnung zu haben, was es in der Welt bedeutet oder sehr genau zu wissen, was es in der Welt bedeutet, aber nicht die Einzelheiten der Theorie zu verstehen. In der Vergangenheit haben wir das Erste betont. In meiner Studienzeit haben wir uns auf die Theorie konzentriert und ich hatte null Ahnung nach meinem Studium, wie es verwendet werden kann. Auf der anderen Seite sehe ich in unseren Studierenden hier die Gefahr, dass sie zwar wissen, wie die Dinge benützt werden können, aber einen Widerstand dagegen zu verstehen, wieso die Werkzeuge funktionieren, die sie so gern vom Regal her nehmen zum Benutzen. Also sollen wir lernen, wie die Werkzeuge funktionieren, die wir verwenden, oder sollen wir eher lernen, wie sie benützt werden können? Ich bin der Meinung, dass beides dazugehört. Ich würde sagen, Professoren müssen lernen, mehr in Bezug auf Geschichten zu unterrichten und Studierende müssen lernen, mehr in Bezug auf den inneren Mechanismus der Werkzeuge und sich dessen bewusst zu sein und nicht nur, wie sie verwendet werden können. 
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Weil auch zum Beispiel, so denke ich jetzt, dass der innere Mechanismus und das Verständnis der Werkzeuge selber einem auch mehr Flexibilität bietet, auf was man es dann anwenden kann. Weil man lernt natürlich dann auch die Anwendung, aber dann kann man es auf mehr Sachen wahrscheinlich anwenden, wenn man es besser versteht.
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Ja, finde ich auch.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay. Wenn Sie Ihrem jüngeren Ich einen Ratschlag geben könnten, welcher wäre das?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Du hast in deiner Hand die Macht, die Welt leichter zu nehmen. Du musst dich nicht immer darüber aufregen.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay. Ich wollte gerade über Macht reden. Wenn Sie die Macht hätten, einen Aspekt der Welt zu verändern, welcher wäre das und warum? Stellen Sie sich vor, Sie sind der UN-Generalsekretär, der kann natürlich nicht alleine entscheiden, was passiert, aber hat dennoch viel Sagen, sage ich mal. Was sehen Sie denn so als, was die Menschheit vielleicht verändern sollte?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: Es ist zu einfach in der heutigen Welt, die Augen und das Herz zu schließen gegen das Leiden von anderen, besonders wenn sie sehr fern auf der anderen Seite der Welt sind. Ich würde mir wünschen, dass die Menschen weniger oft sich abwenden von Leiden und sich mehr solidarisch fühlen würden mit leidenden Menschen.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Das ist eine gute Antwort.
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay, das ist die letzte Frage. Wenn Sie eine Sache am C5-Gebäude verändern könnten, was wäre das?
+                                <br/>
+                                <br/>
+                    <Strong>Palfreyman</Strong>: C5? Nichts Besonderes. Mein Alltagskontakt zum Bioinformatikzentrum (C5) hat in den Corona-Jahren nachgelassen, so dass ich nur noch wenig persönlichen Bezug dazu empfinde. Es war nicht immer so - früher waren wir eine aktive Lern-Familie aus Studierenden und Lehrenden, und damals empfand ich C5 als ein freundliches Zuhause. Gott sei dank sind Frau Brand, Herr Hege, Herr Stetter und Herr Leßke gerade dabei, diese Familie im Rahmen der mittlerweile stark gewachsenen Fakultät Bioingenieurwissenschaften neu zu konstituieren. Ich wünsche ihnen viel Erfolg dabei!
+                                <br/>
+                                <br/>
+                    <Strong>Marlon</Strong>: Okay, dann vielen Dank.
+                    </span>
+                            </p>
+                            <button onclick="readMore()" id="myBtn">Read more</button>
+                       
+                    </div>
+                </div>
+                <!-- Add more blog posts here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <a href="impressum.html">Impressum</a>
+    </footer>
+    
+    <!-- Add jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
