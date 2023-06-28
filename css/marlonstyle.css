@@ -1,21 +1,52 @@
+@import url("../webfonts/Univers_Next/stylesheet.css");
+@import url("../webfonts/cursive/stylesheet.css");
+
 body {
-    font-family: 'Broadway', sans-serif;
-    background-color: #376420;
+    font-family: 'Univers Next'sans-serif;
+    background-color: #FFFFFF;
     margin-top: 19px;
     color: rgba(10, 7, 7, 0.9);
 }
 
 .navbar {
-    background-color: #228b22;
+    background-color: #7AB800;
+    text-color: #228B22
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: #fff;
+    color: #7AB800;
 }
 
-.navbar .nav-link:hover {   
-    color: #c1f0c1;
+.h1{
+    color: #7AB800;
+    
+}
+
+.h2{
+    color: #5A9331;
+    font-size: large;
+    
+}
+
+
+
+.b{
+    font: "Univers Next";
+    background-color: #228B22;
+    shape-outside: ellipse();
+    color: #7AB800;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.navbar .nav-link:hover {
+    color: #4A8E28;
+    font-family: "gelato-luxe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 0px #228B3D;
 }
 
 .card {
@@ -30,16 +61,8 @@ body {
     padding: 1rem;
 }
 
-.card-body::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' %3E%3Crect x='0' y='0' width='1' height='1' fill='%23ffffff' opacity='0.8'/%3E%3C/svg%3E");
-    border-radius: 14px;
+.card-title {
+    color: #7AB800;
 }
 
 .card-header {
@@ -73,4 +96,19 @@ footer {
 }
 .hidden {
     display: none;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
+    color: #228b22;
+}
+.container .row .col-md-8 .card.mb-4 .card-body .card-title {
+    color: #000000;
+}
+.container .row .col-md-8 .card.mb-4 .card-body .card-title {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 8px;
+    color: #7AB800;
+    font-family: "Univers Next";
+    font-style: normal;
+    font-variant: normal;
+
 }
