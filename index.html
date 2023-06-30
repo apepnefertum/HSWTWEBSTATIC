@@ -14,22 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/marlonstyle.css">
     <link rel="stylesheet" href="https://use.typekit.net/rfd2end.css">
     
-<script>
-        function readMore() {
-          var dots = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
-        
-        
-          if(dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read less"; 
-          } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read more"; 
-          }
-        }
-        </script>
-
        <style>
 
 .hidden {
@@ -46,6 +30,7 @@
 </head>
 
 <body>
+    <script src="js/main.js"></script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Home&nbsp;</a>
@@ -68,7 +53,7 @@
     <div class="container">
         <div class="row">
             <!-- Blog posts -->
-            <div class="col-md-8">
+            <div class="col-md-8 col-xl-9">
                 <h2> Latest Posts</h2>
                 <div class="card mb-4">
                     <div class="card-body">
@@ -83,7 +68,7 @@
                                 <br/>
                                 <br/>
                     Interviewed person (<Strong>Palfreyman</Strong>): Ich wollte fliegen und zwar nicht als Pilot, sondern als Vogel. Ich wollte lernen zu fliegen. Als zwölfjähriger habe ich Turnspringen gemacht und es kam irgendwie hin, aber ich konnte nicht oben bleiben und deswegen wollte ich unbedingt irgendwann lernen zu fliegen.
-                    <span id="more" class="hidden">
+                    <span id="more1" class="hidden">
                                 <br/>
                                 <br/>
                     <Strong>Marlon</Strong>: Gab es eine Zeit, als Sie dann realisiert haben, oder gab es den Traum schon bevor Sie wussten, dass Menschen nicht fliegen konnten?
@@ -329,7 +314,7 @@
                     <Strong>Marlon</Strong>: Okay, dann vielen Dank.
                     </span>
                       </p>
-                            <button class="b" id="myBtn" onclick="readMore()">Read more</button>
+                            <button class="b" id="myBtn" onclick="readMore('more1','myBtn')">Read more</button>
                        
                     </div>
                 </div>
@@ -375,7 +360,7 @@ gebaut auf zwei Hügeln.
     </br>
 <img src="img/P5240205.jpg" alt="Description of Image" class="w-75">
 </br>
-<span id="more" class="hidden">
+<span id="more2" class="hidden">
 Als alle Teilnehmer ihre Plätze gefunden hatten, ergab sich ein ganz gutes Bild der Bestückung, 
 neben den Fakultätsmitarbeitern wie den Professoren,
 der <a href="https://www.hswt.de/person/tina-krueger" target="_blank" rel="noopener">Studiengangs Assistenz</a> und dem <a href="https://www.hswt.de/hochschule/organisation/fakultaeten/bioingenieurwissenschaften" target="_blank" rel="noopener">Dekanat</a>, waren auch einige 
@@ -476,7 +461,8 @@ währenddessen das Technikum Anschauen.
                              
                     </span>
                             </p>
-                            <button class="b" id="myBtn" onclick="bericht.html">Read more</button>
+                            <button class="b" id="myBtn2" onclick="readMore('more2','myBtn2')">Read more</button>
+
                        
                     </div>
                 </div>
@@ -487,7 +473,7 @@ währenddessen das Technikum Anschauen.
     
     <!-- Footer -->
     <footer class="bg-light text-center py-3">
-        <a href="impressum.html">Impressum</a>
+        <a href="impressum.html">Impressum u. Datenschutz</a>
     </footer>
     
     <!-- Add jQuery and Bootstrap JS -->

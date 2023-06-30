@@ -13,22 +13,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/marlonstyle.css">
     <link rel="stylesheet" href="https://use.typekit.net/rfd2end.css">
-    
-<script>
-        function readMore() {
-          var dots = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
-        
-        
-          if(dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read less"; 
-          } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read more"; 
-          }
-        }
-        </script>
+    <script src="js/main.js"></script>
 
        <style>
 
@@ -68,8 +53,7 @@
     <div class="container">
         <div class="row">
             <!-- Blog posts -->
-            <div class="col-md-8">
-                <h2> Latest Posts</h2>
+            <div class="col-md-8 col-xl-9">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Paulfreyman Interview</h5>
@@ -329,7 +313,7 @@
                     <Strong>Marlon</Strong>: Okay, dann vielen Dank.
                     </span>
                       </p>
-                            <button class="b" id="myBtn" onclick="readMore()">Read more</button>
+                            <button class="b" id="myBtn" onclick="readMore('more','myBtn')">Read more</button>
                        
                     </div>
                 </div>
@@ -340,7 +324,7 @@
 
     <!-- Footer -->
     <footer class="bg-light text-center py-3">
-        <a href="impressum.html">Impressum</a>
+        <a href="impressum.html">Impressum u. Datenschutz</a>
     </footer>
     
     <!-- Add jQuery and Bootstrap JS -->

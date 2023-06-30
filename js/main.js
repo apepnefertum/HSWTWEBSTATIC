@@ -1,6 +1,6 @@
-function readMore() {
-    var dots = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+function readMore(id,myBtn) {
+  var dots = document.getElementById(id);
+  var btnText = document.getElementById(myBtn);
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -10,3 +10,9 @@ function readMore() {
       btnText.innerHTML = "Read more"; 
     }
   }
+
+// Inside main.js
+function sayHello() {
+    alert('Hello, World!');
+}
+
