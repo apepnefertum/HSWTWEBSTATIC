@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bioengineering HSWT</title>
+    <title>Bioengineering HSWT| Student Blog</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Add Bootstrap CSS -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -31,23 +31,45 @@
 </head>
 
 <body>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Home&nbsp;</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12" style="vertical-align: middle">
+        <a class="navbar-brand"  Style="vertical-align: middle" href="#">Home&nbsp;</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="vertical-align: middle">
+    <ul class="navbar-nav">
+      <li class="nav-item active" style="vertical-align: middle; text-align: left;">
                     <a class="nav-link" href="Interviews.html">Interviews</a>
                 </li>
-                <li class="nav-item active">
+      <li class="nav-item active" style="vertical-align: middle; text-align: left;">
                     <a class="nav-link" href="bericht.html">Berichte</a>
                 </li>
-            </ul>
-        </div>
+      </ul>
+    <div class="container-fluid nav-item"style="display: flex; justify-content: flex-end; vertical-align: middle;">
+          <h5 class="sizer" >Bioengineering </h5>
+            <img src="img/hswt logo.png" alt="" height="30"class="nav-fill " />
+      <h5 class="sizer"> Student Blog</h5>
+    </div>
+        
+    <script>
+            const toggle = document.querySelector('[data-toggle="collapse"]');
+            const container = document.querySelector('.container-fluid');
+
+            toggle.addEventListener('click', () => {
+                if (container.style.justifyContent === 'flex-end') {
+                    container.style.justifyContent = 'flex-start';
+                    sizer.style.fontSize = (currentSize - 10) + 'px';
+                } 
+                else {
+                    container.style.justifyContent = 'flex-end';
+                    sizer.style.fontSize = (currentSize + 10) + 'px';
+                }
+            });
+        </script>
+    </div>
+        
 </nav>
 
     <!-- Main content -->
@@ -67,7 +89,7 @@
                         <p class="card-text" id="myContent">
                             Interviewer (<Strong>Marlon</Strong>): Was wollten Sie, als Sie noch ein Kind waren, was waren so Ihre Träume, was Sie mal werden wollten?
                                 <br/>
-                                <br/>
+                          <br/>
                     Interviewed person (<Strong>Palfreyman</Strong>): Ich wollte fliegen und zwar nicht als Pilot, sondern als Vogel. Ich wollte lernen zu fliegen. Als zwölfjähriger habe ich Turnspringen gemacht und es kam irgendwie hin, aber ich konnte nicht oben bleiben und deswegen wollte ich unbedingt irgendwann lernen zu fliegen.
                     <span id="more1" class="hidden">
                                 <br/>
@@ -322,7 +344,7 @@
                 <!-- Add more blog posts here -->
             </div>
         </div>
-    </div>
+</div>
     
     
      <!-- Main content -->
@@ -460,8 +482,8 @@ währenddessen das Technikum Anschauen.
                    
                               
                              
-                    </span>
-                            </p>
+            </span>
+                      </p>
                             <button class="b" id="myBtn2" onclick="readMore('more2','myBtn2')">Read more</button>
 
                        
@@ -478,8 +500,8 @@ währenddessen das Technikum Anschauen.
     </footer>
     
     <!-- Add jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 <script src="js/bootstrap-4.4.1.js"></script>
 </body>

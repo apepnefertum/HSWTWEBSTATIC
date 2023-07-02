@@ -29,7 +29,29 @@ body {
     
 }
 
+.h3{
+    color: #5A9331;
+    font-size: 20 px;
+}
 
+.sizer{
+    color: #5A9331;
+    font-family: "Univers Next";
+}
+
+.title{
+    font-family: "Univers Next";
+    color: #7AB800;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.title2{
+    font-family: "Univers Next";
+    color: #7AB800;
+    font-style: normal;
+    font-variant: normal;
+}
 
 .b{
     font: "Univers Next";
@@ -111,4 +133,18 @@ footer {
     font-style: normal;
     font-variant: normal;
 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.container-fluid{
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
 }
